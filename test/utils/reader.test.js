@@ -1,5 +1,5 @@
 const fs = require("fs");
-const Reader = require("./../../lib/utils/Reader");
+const Reader = require('./../../lib/utils/Reader');
 
 describe("Unit test for Reader class", () => {
     test("Read json file", () => {
