@@ -1,6 +1,6 @@
-const Reader = require('./../../lib/utils/reader');
+const Reader = require("./../../lib/utils/reader");
 const explorers = Reader.readJsonFile("explorers.json");
-const ExplorerService = require('./../../lib/services/explorerService');
+const ExplorerService = require("./../../lib/services/explorerService");
 
 describe("Unit test for ExplorerService class", () => {
 
@@ -12,7 +12,7 @@ describe("Unit test for ExplorerService class", () => {
     test("Get amount of explorers by mission", () => {
         const amountOfExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
         expect(amountOfExplorersInNode).toBe(10);
-    })
+    });
 
     test("Get explorers username by mission", () => {
         const usernamesInNode = ExplorerService.getExporersUsernameByMission(explorers, "node");
