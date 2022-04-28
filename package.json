@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/jest/bin/jest.js"  
+    "test": "node ./node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/AlejandroMorales-s/fizzbuzz#readme",
   "devDependencies": {
-    "jest": "^28.0.2"
+    "jest": "^26.0.0"
   }
 }
