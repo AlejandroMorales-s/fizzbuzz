@@ -1,6 +1,7 @@
 const fs = require("fs");
 const ExplorerService = require("./lib/services/explorerService");
 const Reader = require("./lib/utils/reader");
+const FizzbuzzApiService = require("./lib/services/fizzbuzzApiService");
 const explorers = Reader.readJsonFile("explorers.json");
 // Usando objeto express
 const express = require('express')
@@ -26,6 +27,11 @@ app.get('/v1/explorers/usernames/:mission', (req, res) => {
     const mission = req.params.mission
     const usernamesInNode = ExplorerService.getExporersUsernameByMission(explorers, mission)
     res.send(usernamesInNode)
+})
+app.get('/v1/explorers/trick/:number', (req, res) => {
+    const number = req.params.number
+    const trick = FizzbuzzApiService.applyValidationInExplorer(number)
+    res.send(trick)
 })
 // Con esto inicializamos esta app
 app.listen (port, () => {
