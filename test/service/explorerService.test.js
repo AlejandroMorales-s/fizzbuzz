@@ -1,4 +1,4 @@
-const Reader = require('./../../lib/utils/Reader');
+const Reader = require('./../../lib/utils/reader');
 const explorers = Reader.readJsonFile("explorers.json");
 const ExplorerService = require('./../../lib/services/explorerService');
 
