@@ -14,4 +14,8 @@ describe("Unit test for ExplorerService class", () => {
         expect(amountOfExplorersInNode).toBe(10);
     })
 
+    test("Get explorers username by mission", () => {
+        const usernamesInNode = ExplorerService.getExporersUsernameByMission(explorers, "node");
+        expect(usernamesInNode[0]).toBe("ajolonauta1");
+    });
 });
