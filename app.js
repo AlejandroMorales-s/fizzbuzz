@@ -12,11 +12,11 @@ const explorersInNode = ExplorerService.filterByMission(explorers, "node");
 
 //* Part 3: Get the amount of explorers by mission
 const amountOfExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
-console.log(amountOfExplorersInNode); 
+//console.log(amountOfExplorersInNode); 
 
 //* Part4: Get the explorer's usernames in Node
 const usernamesInNode = ExplorerService.getExporersUsernameByMission(explorers, "node");
-console.log(usernamesInNode)
+//console.log(usernamesInNode)
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
