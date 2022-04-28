@@ -10,7 +10,8 @@ describe("Unit test for ExplorerService class", () => {
     });
 
     test("Get amount of explorers by mission", () => {
-        const amountOfExplorersInNode = explorers.filter((explorer) => explorer.mission == "node").length;
+        const amountOfExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
         expect(amountOfExplorersInNode).toBe(10);
     })
+
 });
