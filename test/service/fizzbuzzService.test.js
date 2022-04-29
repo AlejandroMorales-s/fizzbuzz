@@ -28,4 +28,32 @@ describe("Unit test for FizzbuzzService class", () => {
     
         expect(explorer15.trick).toBe("FIZZBUZZ");
     });
+
+    test("Retornar el score", () => {
+        const number = 1;
+        const result = FizzbuzzService.applyValidationInNumber(number);
+
+        expect(result).toBe(1);
+    });
+
+    test("Retornar Fizz", () => {   
+        const number = 3;
+        const result = FizzbuzzService.applyValidationInNumber(number);
+
+        expect(result).toBe("FIZZ");
+    });
+
+    test("Retornar Buzz", () => {   
+        const number = 5;
+        const result = FizzbuzzService.applyValidationInNumber(number);
+
+        expect(result).toBe("BUZZ");
+    });
+
+    test("Retornar Fizz", () => {   
+        const number = 15;
+        const result = FizzbuzzService.applyValidationInNumber(number);
+
+        expect(result).toBe("FIZZBUZZ");
+    });
 });
