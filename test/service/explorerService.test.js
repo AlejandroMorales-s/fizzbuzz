@@ -18,4 +18,10 @@ describe("Unit test for ExplorerService class", () => {
         const usernamesInNode = ExplorerService.getExporersUsernameByMission(explorers, "node");
         expect(usernamesInNode[0]).toBe("ajolonauta1");
     });
+
+    test("Get explorers name by mission", () => {
+        const names = ExplorerService.getExporersNameByMission(explorers, "node");
+        console.log(names); 
+        expect(names[0]).toBe("Woopa1");
+    });
 });
